@@ -5,7 +5,9 @@ The framework leverages **spectrogram-based image representations** of audio, co
 
 ## Framework Overview
 
-![Framework](./framework/framework.png)
+<p align="center">
+  <img src="./framework/framework.png" alt="EACE-ViTs Framework" width="800"/>
+</p>
 
 
 ---
@@ -76,13 +78,13 @@ pip install -r requirements.txt
 
 ### 4. Generate dataset splits
 ```bash
-python split_indices.py
+python save_splits.py
 ```
 
 ### 5. Train models  
 Example (training DeiT):
 ```bash
-python train_vit.py --model deit_base --epochs 20 --batch_size 32
+python train.py --model deit_base --epochs 20 --batch_size 32
 ```
 
 ### 6. Run inference per model (save softmax + labels)
@@ -92,7 +94,7 @@ python test.py   # run again for calibration split → saves softmax_outputs_cal
 ```
 (Optional) Convert .npy files to .npz format:
 ```bash
-python npy_npz.py
+python save_npz.py
 # Produces files like:
 # ./output/DeiT_model/DeiT_output_test.npz
 # ./output/DeiT_model/DeiT_output_cal.npz
@@ -110,7 +112,7 @@ python eace.py
 ### 8. Conformal Prediction experiments & CSVs
 ```bash
 python cp_experiment.py      # Main CP experiments (averages + std over trials)
-python cp_extened_eval.py    # Extended CP evaluation (correct vs. incorrect analysis)
+python cp_extended_eval.py    # Extended CP evaluation (correct vs. incorrect analysis)
 # Results saved to ./Results/ (mean_results.csv, std_results.csv, etc.)
 ```
 
