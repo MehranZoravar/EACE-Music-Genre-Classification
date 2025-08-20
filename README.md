@@ -49,7 +49,7 @@ EACE_ViTs_Music_Genres_Classification/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/<MehranZoravar>/EACE_ViTs_Music_Genres_Classification.git
+git clone https://github.com/MehranZoravar/EACE_ViTs_Music_Genres_Classification.git
 cd EACE_ViTs_Music_Genres_Classification
 ```
 
