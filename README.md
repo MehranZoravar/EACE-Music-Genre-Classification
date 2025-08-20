@@ -3,6 +3,11 @@
 This repository contains the implementation of our framework **EACE-ViTs**, which applies **Vision Transformers (ViTs)** with **Conformal Prediction** to achieve robust and uncertainty-aware **music genre classification**.  
 The framework leverages **spectrogram-based image representations** of audio, conformal calibration, and ensemble prediction to improve classification reliability.  
 
+## Framework Overview
+
+![Framework](./framework/framework.png)
+
+
 ---
 
 ## 📌 Features  
